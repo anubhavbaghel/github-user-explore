@@ -1,0 +1,36 @@
+@import url("https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Manrope:wght@200..800&display=swap");
+
+@import "tailwindcss";
+
+:root {
+  font-family: "Manrope", sans-serif;
+  padding-left: 5%;
+  padding-right: 5%;  
+}
+
+@media screen and (min-width: 425px) {
+  :root {
+    padding-left: 15%;
+    padding-right: 15%;
+  }
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+li {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #5c5f61;
+}
+p {
+  font-size: 1rem;
+  font-weight: 500;
+}
