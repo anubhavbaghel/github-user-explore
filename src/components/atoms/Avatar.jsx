@@ -1,5 +1,4 @@
 import React from "react";
-import mockUsers from "../../Data/mockData";
 import useGlobalStore from "../../Data/globalStore"
 
 const Avatar = () => {

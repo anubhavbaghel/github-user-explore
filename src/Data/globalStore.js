@@ -1,5 +1,4 @@
 import { create } from "zustand";
-import mockUsers from "./mockData";
 import { persist } from "zustand/middleware";
 
 const useGlobalStore = create(

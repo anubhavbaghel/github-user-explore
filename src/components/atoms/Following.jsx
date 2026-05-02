@@ -1,5 +1,4 @@
 import React from "react";
-import mockUsers from "../../Data/MockData";
 import useGlobalStore from "../../Data/globalStore";
 
 const Following = () => {
