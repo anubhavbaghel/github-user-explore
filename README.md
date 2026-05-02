@@ -52,46 +52,6 @@ src/
   main.jsx             App entry point
 ```
 
-## Getting Started
-
-### Prerequisites
-
-- Node.js
-- npm
-
-### Installation
-
-```bash
-npm install
-```
-
-### Run the Development Server
-
-```bash
-npm run dev
-```
-
-Then open the local URL shown in the terminal.
-
-### Build for Production
-
-```bash
-npm run build
-```
-
-### Preview the Production Build
-
-```bash
-npm run preview
-```
-
-## Available Scripts
-
-- `npm run dev` starts the Vite development server
-- `npm run build` creates the production build
-- `npm run preview` previews the production build locally
-- `npm run lint` runs ESLint
-
 ## State Management
 
 The app uses Zustand for global state management. The main store currently tracks:
@@ -106,8 +66,6 @@ This helps keep the search flow and rendered UI in sync across components.
 
 - The app uses public GitHub data.
 - A GitHub token is not required for basic public profile and repository lookups.
-- For production apps, sensitive tokens should never be stored in frontend code.
-- If higher rate limits or private data access are needed, a backend or serverless function should be used.
 
 ## Current UI Sections
 
