@@ -1,7 +1,6 @@
 import React from "react";
 import Avatar from "../atoms/Avatar";
 import Bio from "../atoms/Bio";
-import mockUsers from "../../Data/mockData";
 import Followers from "../atoms/Followers";
 import Following from "../atoms/Following";
 import Repositories from "../atoms/Repositories";
