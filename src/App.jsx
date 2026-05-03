@@ -14,8 +14,9 @@ function App() {
   return (
     <>
       <Navbar/>
-      {(userInfo) ? (<UserSection/>) : (<p>Enter username in search bar to get details</p>)}
-      {(userRepoInfo.length !== 0)? <RepositorySection/> : <p className='text-center text-3xl'>No repositories found for the user</p>}
+      {(userInfo.name) ? (<UserSection/>) : (<h3 className="text-3xl text-center py-[10%] bg-green-200 rounded-2xl mb-2">Enter Username in the Search bar</h3>)}
+      {(userInfo.name && userRepoInfo.length !== 0) && <RepositorySection/>}
+      {(userInfo.name && userRepoInfo.length == 0) && <h3 className='text-center py-[10%] bg-yellow-100 rounded-2xl text-3xl'>No repositories found for the user</h3>}
     </>
   )
 }

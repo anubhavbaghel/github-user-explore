@@ -2,7 +2,7 @@ import { create } from "zustand";
 import { persist } from "zustand/middleware";
 
 const useGlobalStore = create(
-  persist((set) => ({
+  (set) => ({
     userInfo: {},
     userInput: "",
     userRepoInfo: [],
@@ -10,7 +10,7 @@ const useGlobalStore = create(
     setUserRepoInfo: (userRepoData) =>
       set((state) => ({ userRepoInfo: userRepoData })),
     setUserInput: (input) => set((state) => ({ userInput: input })),
-  })),
+  }),
 );
 
 export default useGlobalStore;

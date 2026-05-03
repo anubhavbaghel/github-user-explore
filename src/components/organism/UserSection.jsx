@@ -1,12 +1,15 @@
-import React from 'react'
-import UserCard from '../molecules/UserCard'
+import React from "react";
+import UserCard from "../molecules/UserCard";
+import useGlobalStore from "../../Data/globalStore";
 
 const UserSection = () => {
-  return (
-    <div className='flex flex-col w-full h-full'>
-        <UserCard/>
-    </div>
-  )
-}
+  const userInfo = useGlobalStore((state) => state.userInfo);
 
-export default UserSection
+  return (
+    <div className="flex flex-col w-full h-full">
+      <UserCard />
+    </div>
+  );
+};
+
+export default UserSection;
